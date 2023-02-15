@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-size: cover;
+    min-width: min-content;
+  }
+
+body {
+    background-color: whitesmoke;
+    /*#D9DBF1
+    #D0CDD7
+    #ACB0BD
+    #416165
+    #0B3948*/
+
+}
+
+nav {
+    overflow: hidden;
+    height: 60px;
+    background-color: #F9B9F2;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: larger;
+}
+
+nav li a:hover {
+    background-color: #ace58a;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    background-color: #F9B9F2 ;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
+p {
+  width: 700px;
+  text-align: center;
+}
+
+  .card2 {
+    width: 400px;
+    height: 300px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: whitesmoke;
+  }
+  
+  .content {
+    text-align: justify;
+    padding-top: 50px;
+  }
+
+  .card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .card {
+    flex: 1 0 calc(33.33% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #ACB0BD;
+    margin-bottom: 20px;
+  }
+  
+  .card-title {
+    padding: 10px;
+    background-color: #f5f5f5;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .card-img {
+    height: 0;
+    padding-bottom: 75%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .card-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .carousel-inner {
+    height: 600px;
+  }
+
+  .accordion-button:not(.collapsed) {
+background-color: #ace58a;
+  }
+
+  .accordion-button {
+    background-color:  #ace58a;
+    height: 30px;
+      }
+  
+  @media only screen and (max-width: 767px) {
+    .card-row {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .card {
+      flex: 1 0 100%;
+    }
+  }
+
+  @media (prefers-reduced-motion:reduce) {
+
+    /* styles to apply if the user's settings are set to reduced motion */
+  }
