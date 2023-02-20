@@ -1,10 +1,77 @@
 body {
   background-color: #dbbec0;
-  background-image: url(./Home.png);
   font-family: 'Alegreya', serif;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 150px;
 }
+
+#global-nav {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  height: 150px;
+  width: 100%;
+  background: #324c5f;
+  color: #fff;
+  line-height: 150px;
+    -webkit-transition: height .5s, line-height .5s; /* Safari */
+    transition: height .5s, line-height .5s;
+}
+
+.site-title {
+  display: inline-block;
+  -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.scrolled-nav .site-title  {
+  font-size: 16px;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list li {
+  list-style: none;
+  display: inline-block;
+  padding-left: 20px;
+}
+
+
+.content-section {
+  height: 500px;
+  padding: 50px;
+}
+
+.hero-section {
+  height: 200px;
+}
+
+.hero-text,
+.content-text {
+  max-width: 550px;
+}
+
+.hero-section h1 {
+  color: #333;
+}
+
+.hero-section p {
+  color: #333;
+}
+
+.content-section {
+  height: fit-content;
+  background-color: #212529;
+}
+
+.scrolled-nav {
+  height: 60px !important;
+  line-height: 60px !important;
+}
+
 
 .btn {
   background-color: lightblue;
@@ -24,11 +91,14 @@ body {
   height: 50px;
   font-size: 20px;
 }
-
+.maincard {
+  margin: 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  background-color: rgba(254, 184, 194, 0.861);
+}
 .title {
   text-align: center;
   margin-top: 100px;
-  /* adjust as needed */
 }
 
 .title h1 {
@@ -59,7 +129,16 @@ body {
   justify-content: center;
   background-color: blanchedalmond;
   height: 500px;
-  margin-top: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.aboutmesection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blanchedalmond;
+  height: 600px;
+  margin-top: px;
 }
 
 .section2 {
@@ -68,7 +147,7 @@ body {
   justify-content: center;
   background-color: lightblue;
   height: 500px;
-  margin-top: 0px;
+  margin-top: 20px;
 }
 
 .image-box {
@@ -87,14 +166,14 @@ body {
 
 .box1 {
   height: 300px;
-  background-image: url(./1.jpeg);
+  background-image: url(./pictures/1.jpeg);
   background-size: cover;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .box2 {
   height: 200px;
-  background-image: url(./2.jpeg);
+  background-image: url(./pictures/2.jpeg);
   background-size: cover;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   margin-top: 50px;
@@ -102,20 +181,20 @@ body {
 
 .box3 {
   height: 350px;
-  background-image: url(./3.jpeg);
+  background-image: url(./pictures/3.jpeg);
   background-size: cover;
 }
 
 .box4 {
   height: 300px;
-  background-image: url(./4.jpeg);
+  background-image: url(./pictures/4.jpeg);
   background-size: cover;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .box5 {
   height: 200px;
-  background-image: url(./5.jpeg);
+  background-image: url(./pictures/5.jpeg);
   background-size: cover;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   margin-top: 50px;
@@ -123,13 +202,13 @@ body {
 
 .box6 {
   height: 350px;
-  background-image: url(./6.jpeg);
+  background-image: url(./pictures/6.jpeg);
   background-size: cover;
 }
 
 .box7 {
   height: 300px;
-  background-image: url(./7.jpeg);
+  background-image: url(./pictures/7.jpeg);
   background-size: cover;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   margin-top: 30px;
@@ -137,7 +216,7 @@ body {
 
 .box8 {
   height: 350px;
-  background-image: url(./8.jpeg);
+  background-image: url(./pictures/8.jpeg);
   background-size: cover;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   margin-bottom: 50px;
@@ -147,6 +226,30 @@ body {
   height: 350px;
   background-image: url(./9.jpeg);
   background-size: cover;
+}
+
+.box10 {
+  height: 600px;
+  background-image: url(./pictures/IMG_7041.JPG);
+  background-size: cover;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.getintouchsection {
+  display: flex;
+  margin: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: blanchedalmond;
+  height: 650px;
+  margin-top: 30px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.carousel-caption {
+  background-color: blanchedalmond;
+  color:#212529 ;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .divider {
@@ -212,16 +315,11 @@ body {
   padding: 30px;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  background-image: url(./Home.png);
-}
 
 .button-container {
   display: flex;
+  justify-content: center;
+  margin: 10px;
 }
 
 .button-primary {
@@ -244,20 +342,30 @@ footer {
 }
 
 
+
 @media only screen and (max-width: 768px) {
 
-  /* adjust max-width as needed */
+ .nav-list {
+  display: none;
+ }
   .title h1 {
     font-size: 2rem;
-    /* reduce font size for smaller screens */
+    
   }
 }
 
 @media only screen and (max-width: 576px) {
 
-  /* adjust max-width as needed */
+  
   .title h1 {
     font-size: 1.5rem;
-    /* further reduce font size for smaller screens */
+   
+  }
+}
+
+@media (max-width: 810px) {
+  
+  .image-box {
+    display: none;
   }
 }
