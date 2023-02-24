@@ -12,8 +12,6 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   transform: translate3d(100%, 0, 0);
   transition: transform 300ms;
   pointer-events: none;
@@ -34,8 +32,6 @@ img {
 }
 
 
-
-
 .item {
   background: repeating-linear-gradient(var(--a, 45deg), var(--c1), var(--c1) var(--i), var(--c2) var(--i), var(--c2) calc(var(--i) * 2));
   display: grid;
@@ -43,6 +39,7 @@ img {
   grid-template: 1fr / 1fr var(--innerTrack, 0);
   overflow: hidden;
   aspect-ratio: 8 / 3;
+  margin: 15px;
   transition: filter 200ms;
 }
 
@@ -183,14 +180,6 @@ a :hover {
 }
 
 
-.movingimage {
-  position: absolute;
-  margin-top: 20px;
-  transform: translate(-50%, -50%);
-  width: fit-content;
-  animation: move 30s linear infinite;
-}
-
 @keyframes move {
   from {left: 0;}
   to {left: 90%;}
@@ -214,15 +203,11 @@ a :hover {
 
 
 body {
-  background-image: url(./Purple\ Glitch\ Gradient\ Livestream\ Twitch\ Banner.png);
-  font-family: 'Alegreya', serif;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 150px;
   margin: 0;
-  min-height: 500vh;
-  background-color: rgb(139, 201, 228);
-  animation: body 1s linear;
+  background-color: #82b8cf;
 }
 
 #global-nav {
@@ -289,15 +274,7 @@ padding-bottom: 5px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
-.dropdown-menu {
-  background-color: blanchedalmond ;
-}
 
-.dropdown-item {
-  text-align: center;
-  height: 50px;
-  font-size: 20px;
-}
 
 .maincard {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
